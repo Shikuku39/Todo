@@ -1,0 +1,96 @@
+@font-face {
+    font-family: quicksand;
+    src: url(Quicksand-VariableFont_wght.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: quicksand;
+}
+
+.container{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+header{
+    height: 60px;
+    background-color: #900020;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+header p {
+    font-size: 45px;
+}
+header #count {
+    margin-left: auto;
+}
+
+form {
+    margin: 10px 0;
+    width: 70%;
+}
+
+form input {
+    font-size: 22px;
+    padding: 10px;
+}
+
+input[type='text'] {
+    width: 70%;
+}
+
+input[type='submit'] {
+    background-color:#900020;
+    color: white;
+    border: 1px solid #900020;
+    width: fit-content;
+}
+
+.task {
+    display: flex;
+    padding: 7px;
+    font-size: 19px;
+    width: 70%;
+    background-color: #f2f2f2;
+    margin-bottom: 4px;
+}
+
+.task .icon {
+    margin-left: auto;
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#message {
+    font-size: 22px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        padding: 0 4px;
+    }
+
+    form {
+        width: 100%;
+    }
+    input[type='text'] {
+        width: 60%;
+    }
+    .task {
+        width:100%;
+    }
+}
+
